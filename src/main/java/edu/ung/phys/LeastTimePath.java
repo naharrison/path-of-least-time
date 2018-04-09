@@ -84,7 +84,7 @@ public class LeastTimePath extends PApplet {
 				figY += v1*Math.sin(theta1)*(1000.0/frameRate);
 				ellapsedTime = millis() - startTime;
 			}
-			else if(!(Math.abs(figX - victimX) < 3.0)) {
+			else if(!(Math.abs(figX - victimX) < 3.0 && Math.abs(figY - victimY) < 3.0)) {
 				figX += v2*Math.cos(theta2)*(1000.0/frameRate);
 				figY += v2*Math.sin(theta2)*(1000.0/frameRate);
 				ellapsedTime = millis() - startTime;
